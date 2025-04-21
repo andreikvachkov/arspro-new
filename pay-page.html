@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>АРСПРО</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <a href="" class="header__logo">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+                <nav>
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                Оборудование
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="">
+                                        Сценические конструкции
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Звуковое оборудование
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Световое оборудование
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Видео оборудование
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Персонал
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Дополнительное оборудование
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                О нас
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__right">
+                    <div class="header__search">
+                        <input type="text" placeholder="Поиск...">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.5 17.5L13.875 13.875" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="" class="header__application-btn">
+                        Оставить заявку
+                    </a>
+                </div>
+                <button class="header__menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="29" viewBox="0 0 35 29" fill="none">
+                        <path d="M2.09668 2.48828H32.7357" stroke="#1561FF" stroke-width="4" stroke-linecap="round" />
+                        <path d="M2.09668 14.543H32.7357" stroke="#1561FF" stroke-width="4" stroke-linecap="round" />
+                        <path d="M2.09668 26.5996H32.7357" stroke="#1561FF" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="payment-page">
+        <div class="container">
+            <div class="payment-page__wrap">
+                <h1 class="payment-page__title">
+                    ваша заявка
+                </h1>
+                <p class="payment-page__count">
+                    В заявке 3 позиции:
+                </p>
+                <div class="payment-page__main">
+                    <div class="payment-page__left">
+                        <div class="payment-page__product">
+                            <div class="payment-page__product__img">
+                                <img src="assets/images/payment-product.png" alt="">
+                            </div>
+                            <div class="payment-page__product__content">
+                                <div class="payment-page__product__top">
+                                    <p class="payment-page__product__name">
+                                        Led Par
+                                    </p>
+                                    <button class="payment-page__product__delete-btn">
+                                        <img src="assets/images/delete.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="payment-page__product__count-block">
+                                    <button class="decrement">-</button>
+                                    <input type="number" value="1" min="1">
+                                    <button class="increment">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-page__product">
+                            <div class="payment-page__product__img">
+                                <img src="assets/images/payment-product.png" alt="">
+                            </div>
+                            <div class="payment-page__product__content">
+                                <div class="payment-page__product__top">
+                                    <p class="payment-page__product__name">
+                                        Led Par
+                                    </p>
+                                    <button class="payment-page__product__delete-btn">
+                                        <img src="assets/images/delete.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="payment-page__product__count-block">
+                                    <button class="decrement">-</button>
+                                    <input type="number" value="1" min="1">
+                                    <button class="increment">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-page__product">
+                            <div class="payment-page__product__img">
+                                <img src="assets/images/payment-product.png" alt="">
+                            </div>
+                            <div class="payment-page__product__content">
+                                <div class="payment-page__product__top">
+                                    <p class="payment-page__product__name">
+                                        Led Par
+                                    </p>
+                                    <button class="payment-page__product__delete-btn">
+                                        <img src="assets/images/delete.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="payment-page__product__count-block">
+                                    <button class="decrement">-</button>
+                                    <input type="number" value="1" min="1">
+                                    <button class="increment">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-page__right">
+                        <p class="payment-page__right__title">
+                            оформление заявки
+                        </p>
+                        <form action="" class="payment-page__form">
+                            <div class="payment-page__form__content">
+                                <div class="payment-page__form__item payment-page__form__item-name">
+                                    <p class="payment-page__form__item__name">
+                                        Контактное лицо
+                                    </p>
+                                    <input type="text" placeholder="Фамилия Имя">
+                                </div>
+                                <div class="payment-page__form__item payment-page__form__item-tel">
+                                    <p class="payment-page__form__item__name">
+                                        Номер телефона
+                                    </p>
+                                    <input type="text" placeholder="+7 (999) 999-99-99">
+                                </div>
+                                <div class="payment-page__form__item payment-page__form__item-mail">
+                                    <p class="payment-page__form__item__name">
+                                        E-mail
+                                    </p>
+                                    <input type="text" placeholder="name@mail.ru">
+                                </div>
+                                <div class="payment-page__form__item payment-page__form__item-date">
+                                    <p class="payment-page__form__item__name">
+                                        Дата
+                                    </p>
+                                    <input type="text" placeholder="00.00">
+                                </div>
+                                <div class="payment-page__form__item payment-page__form__item-time">
+                                    <p class="payment-page__form__item__name">
+                                        Время
+                                    </p>
+                                    <input type="text" placeholder="00:00">
+                                </div>
+                                <div class="payment-page__form__item payment-page__form__item-position">
+                                    <p class="payment-page__form__item__name">
+                                        Место
+                                    </p>
+                                    <input type="text" placeholder="Не определились">
+                                </div>
+                                <div class="payment-page__form__item payment-page__form__item-format">
+                                    <p class="payment-page__form__item__name">
+                                        Формат мероприятия
+                                    </p>
+                                    <input type="text" placeholder="Например, корпоратив">
+                                </div>
+                                <div class="payment-page__form__item payment-page__form__item-budget">
+                                    <p class="payment-page__form__item__name">
+                                        Предполагаемый бюджет
+                                    </p>
+                                    <input type="text" placeholder="100000">
+                                </div>
+                                <div class="payment-page__form__item payment-page__form__item-feedback">
+                                    <p class="payment-page__form__item__name">
+                                        Пожелания об обратной связи
+                                    </p>
+                                    <input type="text" placeholder="Позвонить / написать (WhatsApp, Telegram)">
+                                </div>
+                                <div class="payment-page__form__item payment-page__form__item-comment">
+                                    <p class="payment-page__form__item__name">
+                                        Комментарий к заявке
+                                    </p>
+                                    <textarea name="" id="" placeholder="Комментарий..."></textarea>
+                                </div>
+                            </div>
+                            <div class="payment-page__form__bottom">
+                                <button>
+                                    Оставить заявку
+                                </button>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" class="checkbox-input" id="policy-payment"
+                                        name="policy-payment" value="policy-payment">
+                                    <label for="policy-payment" class="checkbox-label">Я соглашаюсь с Политикой
+                                        обработки персональных данных</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__top">
+                    <a href="" class="footer__logo-link">
+                        <img src="assets/images/footer_logo.svg" alt="">
+                    </a>
+                    <div class="footer__top__content">
+                        <p class="footer__top__subtitle">
+                            Арсенал ярких проектов
+                        </p>
+                        <p class="footer__top__text">
+                            Техническое обеспечение мероприятий
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__main">
+                    <div class="col">
+                        <p class="name">
+                            меню
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Оборудование
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    О нас
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Доставка
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Проекты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Оставить заявку
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Полезные материалы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="name">
+                            Оборудование
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Сценические конструкции
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Звуковое оборудование
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Световое оборудование
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Видео оборудование
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Персонал
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Дополнительное оборудование
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="footer__socies">
+                            <p class="name">
+                                Социальные сети
+                            </p>
+                            <div class="footer__socies__list">
+                                <a href="">
+                                    <img src="assets/images/youtube.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="assets/images/rutube.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="assets/images/vk.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="assets/images/odnoklassniki.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="assets/images/instagram.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__contact">
+                            <p class="name">
+                                Контакты
+                            </p>
+                            <div class="footer__contact__list">
+                                <div class="footer__contact__whatsapp-telegram">
+                                    <a href="" class="tel">
+                                        +7 (991) 377–11–31
+                                    </a>
+                                    <a href="" class="telegram">
+                                        <img src="assets/images/telegram.svg" alt="">
+                                    </a>
+                                    <a href="" class="whatsapp">
+                                        <img src="assets/images/whatsapp.svg" alt="">
+                                    </a>
+                                </div>
+                                <a href="" class="footer__contact__mail">
+                                    info@ars-pro.ru
+                                </a>
+                                <a href="" class="footer__contact__page-link">
+                                    Контакты
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a href="" class="footer__policy">
+                        Политика конфиденциальности
+                    </a>
+                    <p class="footer__copyright">
+                        © 1998-2025 «АрсПро». Все права защищены
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile-menu">
+        <div class="mobile-menu__container">
+            <div class="mobile-menu__wrap">
+                <button class="mobile-menu__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 20L4 4L20 20ZM20 4L4 20L20 4Z" fill="white" />
+                        <path d="M20 20L4 4M20 4L4 20" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <a href="" class="mobile-menu__tel">
+                    +7 383 2-131-131
+                </a>
+                <a href="" class="mobile-menu__application-btn">
+                    Оставить заявку
+                </a>
+                <div class="mobile-menu__search">
+                    <input type="text" placeholder="Поиск...">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <path
+                                d="M10.0526 16.7029C13.9315 16.7029 17.0759 13.5584 17.0759 9.67957C17.0759 5.8007 13.9315 2.65625 10.0526 2.65625C6.17374 2.65625 3.0293 5.8007 3.0293 9.67957C3.0293 13.5584 6.17374 16.7029 10.0526 16.7029Z"
+                                stroke="white" stroke-width="2.107" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M18.8316 18.4596L15.0127 14.6406" stroke="white" stroke-width="2.107"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="mobile-menu__list">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                Оборудование
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="">
+                                        Сценические конструкции
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Звуковое оборудование
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Световое оборудование
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Видео оборудование
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Персонал
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Дополнительное оборудование
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                О нас
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Доставка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Проекты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="sucsess-popup">
+        <button class="sucsess-popup__close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                <path
+                    d="M17.2656 17.9453L2.26562 1.94531L17.2656 17.9453ZM17.2656 1.94531L2.26562 17.9453L17.2656 1.94531Z"
+                    fill="#58595B" />
+                <path d="M17.2656 17.9453L2.26562 1.94531M17.2656 1.94531L2.26562 17.9453" stroke="#1561FF"
+                    stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="sucsess-popup__container">
+            <p class="sucsess-popup__title">
+                заявка оформлена
+            </p>
+            <p class="sucsess-popup__text">
+                Спасибо за заявку! Мы свяжемся с вами в ближайшее время!
+            </p>
+            <a href="" class="sucsess-popup__btn">
+                вернуться на главную
+            </a>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
