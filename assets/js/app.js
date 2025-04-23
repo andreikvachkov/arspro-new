@@ -115,6 +115,34 @@ $('.catalog-page__sort-block__dropdown .radio-label').on('click', function () {
 
 
 
+function openSortCategory() {
+    $('.category-page__sort-block__dropdown').toggleClass('active');
+    $('.category-page__sort-block .sort-button').toggleClass('active');
+}
+
+$('.category-page__sort-block .sort-button').on('click', function (e) {
+    e.stopPropagation();
+    openSortCategory();
+});
+
+$(document).on('click', function (e) {
+    if (!$(e.target).closest('.category-page__sort-block').length) {
+        $('.category-page__sort-block__dropdown').removeClass('active');
+        $('.category-page__sort-block .sort-button').removeClass('active');
+    }
+});
+
+$('.category-page__sort-block__dropdown .radio-label').on('click', function () {
+    const selectedText = $(this).text();
+    $('.category-page__sort-block .sort-button').text(selectedText);
+    $('.category-page__sort-block__dropdown').removeClass('active');
+    $('.category-page__sort-block .sort-button').removeClass('active');
+});
+
+
+
+
+
 
 const countBlocks = document.querySelectorAll('.payment-page__product__count-block');
 
